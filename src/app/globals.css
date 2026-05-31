@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/* ======= FONT-STYLES FOR TAILWIND ======= */
+
+.font-blackHan {
+  @apply text-white;
+  font-family: var(--font-black-han), sans-serif;
+}
+
+.font-rajdhani {
+  @apply text-white;
+  font-family: var(--font-rajdhani), sans-serif;
+}
+
+.font-lato {
+  @apply text-white;
+  font-family: var(--font-lato), sans-serif;
+}
+
+.font-montserrat {
+  @apply text-white;
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* ======= CSS Animation Keyframes ======= */
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 40s linear infinite;
+}
+
+@keyframes float-soft {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes ring-text {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ring-text {
+  animation: ring-text 30s linear infinite;
+}
+
+
+
+.terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.1em;
+  margin-left: 4px;
+  border-left: 6px solid #ffffff;
+  transform: translateY(3px);
+  animation: terminal-blink 0.9s steps(2, start) infinite;
+}
+
+@keyframes terminal-blink {
+  to {
+    visibility: hidden;
+  }
 }
