@@ -1,7 +1,8 @@
 import Link from "next/link";
+import type { FooterNavigationItem } from "@/types/navigation";
 import { FolderKanban, Home, Mail, User } from "lucide-react";
 
-const footerLinks = [
+const footerLinks: FooterNavigationItem[] = [
   {
     label: "Home",
     href: "/",

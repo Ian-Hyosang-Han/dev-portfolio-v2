@@ -50,7 +50,7 @@ export default function BootSection() {
       {/* Background image on right */}
       <Image
         src="/images/home/boot-bg.webp"
-        alt=""
+        alt="boot background"
         width={900}
         height={650}
         className="pointer-events-none absolute right-[5%] top-[50%] z-0 w-[70vw] max-w-[900px] -translate-y-1/2 opacity-50"

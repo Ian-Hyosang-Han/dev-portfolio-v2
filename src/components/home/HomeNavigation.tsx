@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import type { NavigationItem } from "@/types/navigation";
 
-const navItems = [
+const navItems: NavigationItem[] = [
   {
     label: "Home",
     href: "/",
