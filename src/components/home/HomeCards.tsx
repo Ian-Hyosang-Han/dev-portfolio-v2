@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FolderKanban, UserRound } from "lucide-react";
 
 export default function HomeCards() {
   return (
@@ -28,12 +27,9 @@ export default function HomeCards() {
             <div className="absolute right-0 top-0 h-16 w-16 rounded-bl-[60px] bg-gradient-to-br from-[#9fb6c3] via-[#5f7684] to-[#1b2630] transition-all duration-500 group-hover:h-full group-hover:w-full group-hover:rounded-2xl" />
 
             {/* Icon */}
-            <FolderKanban
-              size={28}
-              strokeWidth={1.8}
-              className="absolute right-4 top-4 z-10 text-white"
-              aria-hidden="true"
-            />
+            <span className="absolute right-4 top-4 z-10 text-2xl leading-none transition duration-500 group-hover:scale-110">
+              🗂️
+            </span>
 
             <div className="relative z-10 m-auto text-center">
               <p className="font-blackHan text-4xl uppercase tracking-wider transition duration-500 group-hover:text-white md:text-5xl">
@@ -56,12 +52,9 @@ export default function HomeCards() {
             <div className="absolute bottom-0 left-0 h-16 w-16 rounded-tr-[60px] bg-gradient-to-br from-[#b8a6b8] via-[#74667a] to-[#211b27] transition-all duration-500 group-hover:h-full group-hover:w-full group-hover:rounded-2xl" />
 
             {/* Icon */}
-            <UserRound
-              size={28}
-              strokeWidth={1.8}
-              className="absolute bottom-4 left-4 z-10 text-white"
-              aria-hidden="true"
-            />
+            <span className="absolute bottom-4 left-4 z-10 text-2xl leading-none transition duration-500 group-hover:scale-110">
+              🎁
+            </span>
 
             <div className="relative z-10 m-auto text-center">
               <p className="font-blackHan text-4xl uppercase tracking-wider transition duration-500 group-hover:text-white md:text-5xl">

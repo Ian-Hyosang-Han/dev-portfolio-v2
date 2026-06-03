@@ -6,6 +6,9 @@ export type NavigationItem = {
 };
 
 export type FooterNavigationItem = NavigationItem & {
-  icon: LucideIcon;
-  color: string;
+  icon?: LucideIcon;
+  emoji?: string;
+  color?: string;
 };
+
+export type SiteNavigationPosition = "left" | "right";

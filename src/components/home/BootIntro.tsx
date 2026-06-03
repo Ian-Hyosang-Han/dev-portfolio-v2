@@ -63,7 +63,7 @@ export default function BootIntro() {
       </div>
 
       {/* Notebook */}
-      <div className="absolute left-[-8%] top-[68%] z-20 w-[55vw] max-w-[500px] animate-float-soft lg:left-[0.5%] lg:top-[68%] lg:w-[30vw] max-[1500px]:hidden">
+      <div className="absolute left-[-8%] top-[68%] z-20 w-[55vw] max-w-[500px] animate-float-soft lg:left-[0.5%] lg:top-[62%] lg:w-[30vw] max-[1500px]:hidden">
         <Image
           src="/images/home/notebook.webp"
           alt="Notebook image"
@@ -74,7 +74,7 @@ export default function BootIntro() {
       </div>
 
       {/* Stand - hide on smaller screens */}
-      <div className="absolute right-[-3%] top-[63%] z-20 hidden w-[22vw] max-w-[370px] animate-float-slow min-[1500px]:block">
+      <div className="absolute right-[-3%] top-[60%] z-20 hidden w-[22vw] max-w-[370px] animate-float-slow min-[1500px]:block">
         <Image
           src="/images/home/stand.webp"
           alt="Stand image"

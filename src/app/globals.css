@@ -22,7 +22,7 @@ body {
 }
 
 .font-rajdhani {
-  @apply text-white;
+  /* @apply text-white; */
   font-family: var(--font-rajdhani), sans-serif;
 }
 
@@ -102,8 +102,6 @@ body {
   animation: ring-text 30s linear infinite;
 }
 
-
-
 .terminal-cursor {
   display: inline-block;
   width: 10px;
@@ -118,4 +116,22 @@ body {
   to {
     visibility: hidden;
   }
+}
+
+@keyframes float-y-soft {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float-y-soft {
+  animation: float-y-soft 5s ease-in-out infinite;
 }

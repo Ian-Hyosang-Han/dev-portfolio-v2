@@ -1,11 +1,11 @@
 import BootIntro from "@/components/home/BootIntro";
 import HomeOverview from "@/components/home/HomeOverview";
-import HomeNavigation from "@/components/home/HomeNavigation";
+import SiteNavigation from "@/components/layout/SiteNavigation";
 
 export default function HomePage() {
   return (
     <main>
-      <HomeNavigation />
+      <SiteNavigation />
       <BootIntro />
       <HomeOverview />
     </main>
