@@ -1,27 +1,8 @@
-import { CalendarCheck, CreditCard, LayoutDashboard } from "lucide-react";
 import type { Project } from "@/types/project";
 
 type ProjectOverviewSectionProps = {
   project: Project;
 };
-
-const overviewHighlights = [
-  {
-    title: "Real-time Booking",
-    description: "Manage reservation flow with live availability.",
-    icon: CalendarCheck,
-  },
-  {
-    title: "Secure Payments",
-    description: "Support payment-related booking workflows.",
-    icon: CreditCard,
-  },
-  {
-    title: "Admin Dashboard",
-    description: "Tools for managing users, bookings, and operations.",
-    icon: LayoutDashboard,
-  },
-];
 
 export default function ProjectOverviewSection({
   project,
@@ -42,7 +23,7 @@ export default function ProjectOverviewSection({
           </p>
 
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {overviewHighlights.map((item) => {
+            {project.overviewHighlights.map((item) => {
               const Icon = item.icon;
 
               return (

@@ -23,7 +23,9 @@ export default function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
         {/* Left content */}
         <div className="max-w-2xl">
           <p className="font-rajdhani text-sm font-semibold uppercase tracking-[0.35em] text-[#b8c77a] md:text-base">
-            // Featured Project
+            {project.isFeatured
+              ? "// Featured Project"
+              : `// ${project.type} Project`}
           </p>
 
           <h1 className="mt-6 font-blackHan text-3xl uppercase tracking-wider text-white md:text-4xl lg:text-5xl">

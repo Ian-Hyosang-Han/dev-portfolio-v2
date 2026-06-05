@@ -8,6 +8,12 @@ export type ProjectOverviewItem = {
   value: string;
 };
 
+export type ProjectOverviewHighlight = {
+  title: string;
+  description: string;
+  icon: LucideIcon | IconType;
+};
+
 export type ProjectFeature = {
   number: string;
   title: string;
@@ -44,11 +50,29 @@ export type Project = {
   year: string;
   type: string;
   heroImage: string;
+
+  isFeatured?: boolean;
+  thumbnail: string;
+  filters: string[];
+
+  overviewItems: ProjectOverviewItem[];
+  overviewHighlights: ProjectOverviewHighlight[];
+
   features: ProjectFeature[];
   techStack: ProjectTechItem[];
   process: ProjectProcessStep[];
   results: ProjectResult[];
-  overviewItems: ProjectOverviewItem[];
+
   liveUrl?: string;
   githubUrl?: string;
+};
+
+export type ProjectListItem = {
+  slug: string;
+  title: string;
+  summary: string;
+  year: string;
+  type: string;
+  thumbnail: string;
+  filters: string[];
 };
