@@ -47,7 +47,7 @@ export default function ProjectsPage() {
 
         <div className="relative z-10 mx-auto w-full max-w-[1800px] px-5 pb-8 md:px-8 lg:px-10">
           <p className="border-t border-white/15 pt-6 text-center font-lato text-xs text-white/45">
-            © 2026 Ian&apos;s Portfolio. All rights reserved.
+            © 2026 Hyosagn Han&apos;s Portfolio. All rights reserved.
           </p>
         </div>
       </div>

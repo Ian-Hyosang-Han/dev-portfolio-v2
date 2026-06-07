@@ -14,7 +14,6 @@ import {
   LayoutDashboard,
   WalletCards,
   BarChart3,
-  ShieldCheck,
   Database,
   Cloud,
 } from "lucide-react";
@@ -250,15 +249,261 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "findinn",
+    title: "FindInn",
+    category: "fullstack",
+    isFeatured: false,
+    filters: ["Full-Stack", "React", "JavaScript", "MongoDB"],
+    summary:
+      "A full-stack hotel booking web application built with React, Vite, Tailwind CSS, Express, MongoDB, Clerk, Cloudinary, and Stripe.",
+    description:
+      "FindInn is a full-stack hotel booking demo application that allows users to browse available rooms, view hotel details, check availability, create bookings, and manage reservations. Hotel owners can register their hotel, add rooms with Cloudinary image uploads, manage room availability, and review booking dashboard data. The project uses React, Vite, Tailwind CSS, Express, MongoDB, Mongoose, Clerk, Cloudinary, Stripe, Axios, and Vercel to demonstrate full-stack architecture, authentication, file uploads, payment flow, REST API design, and responsive UI development.",
+    role: "Full-Stack Developer / UI-UX Designer",
+    year: "2025",
+    type: "Full-Stack / Hotel Booking Demo",
+    heroImage: "/images/projects/findinn/findinn-hero.webp",
+    thumbnail: "/images/projects/findinn/findinn-thumbnail.webp",
+    liveUrl: "https://findinn.vercel.app",
+    githubUrl: "https://github.com/Ian-Hyosang-Han/booking-app",
+
+    overviewItems: [
+      {
+        label: "Role",
+        value: "Full-Stack Developer / UI-UX Designer",
+      },
+      {
+        label: "Duration",
+        value: "2025",
+      },
+      {
+        label: "Team Size",
+        value: "Personal Project",
+      },
+      {
+        label: "Platform",
+        value: "Web Application",
+      },
+      {
+        label: "Category",
+        value: "Hotel Booking / Full-Stack Demo",
+      },
+    ],
+
+    overviewHighlights: [
+      {
+        title: "Booking Flow",
+        description:
+          "Allows users to browse rooms, check availability, and create hotel bookings.",
+        icon: CalendarCheck,
+      },
+      {
+        title: "Owner Dashboard",
+        description:
+          "Provides hotel owners with tools to add rooms, manage availability, and review booking data.",
+        icon: LayoutDashboard,
+      },
+      {
+        title: "Cloud Uploads & Payments",
+        description:
+          "Integrates Cloudinary for room image uploads and Stripe test checkout for demo payments.",
+        icon: Cloud,
+      },
+    ],
+
+    features: [
+      {
+        number: "01",
+        title: "Hotel Room Browsing",
+        description:
+          "Users can explore available rooms, view hotel details, review amenities, browse room images, and check location information.",
+      },
+      {
+        number: "02",
+        title: "Room Filtering & Sorting",
+        description:
+          "Supports destination search, room type filtering, price range filtering, and sorting options for a better browsing experience.",
+      },
+      {
+        number: "03",
+        title: "Booking & Availability Flow",
+        description:
+          "Allows users to select check-in and check-out dates, check room availability, and create bookings through the application.",
+      },
+      {
+        number: "04",
+        title: "Clerk Authentication",
+        description:
+          "Uses Clerk for user authentication, protected routes, session handling, and user-based booking workflows.",
+      },
+      {
+        number: "05",
+        title: "Hotel Owner Dashboard",
+        description:
+          "Provides an owner-facing dashboard where hotel owners can register their hotel, add rooms, manage room availability, and review booking data.",
+      },
+      {
+        number: "06",
+        title: "Cloudinary Image Uploads",
+        description:
+          "Uses Multer and Cloudinary to upload and store room images for hotel owner room management.",
+      },
+      {
+        number: "07",
+        title: "Stripe Test Payment",
+        description:
+          "Integrates Stripe checkout in test mode to simulate online payment for hotel bookings.",
+      },
+    ],
+
+    techStack: [
+      {
+        name: "React",
+        textIcon: "React",
+        color: "text-[#61DAFB]",
+      },
+      {
+        name: "JavaScript",
+        textIcon: "JS",
+        color: "text-[#F7DF1E]",
+      },
+      {
+        name: "Vite",
+        textIcon: "Vite",
+        color: "text-[#b8a6ff]",
+      },
+      {
+        name: "Tailwind CSS",
+        textIcon: "TW",
+        color: "text-[#38BDF8]",
+      },
+      {
+        name: "React Router",
+        textIcon: "RR",
+        color: "text-[#f0a6a6]",
+      },
+      {
+        name: "Axios",
+        textIcon: "AX",
+        color: "text-[#9fb6c3]",
+      },
+      {
+        name: "Node.js",
+        textIcon: "Node",
+        color: "text-[#8CC84B]",
+      },
+      {
+        name: "Express",
+        textIcon: "EX",
+        color: "text-white",
+      },
+      {
+        name: "MongoDB",
+        icon: Database,
+        color: "text-[#47A248]",
+      },
+      {
+        name: "Mongoose",
+        textIcon: "MG",
+        color: "text-[#b8c77a]",
+      },
+      {
+        name: "Clerk",
+        textIcon: "Clerk",
+        color: "text-[#b8a6ff]",
+      },
+      {
+        name: "Cloudinary",
+        icon: Cloud,
+        color: "text-[#8fb6d9]",
+      },
+      {
+        name: "Stripe",
+        icon: SiStripe,
+        color: "text-[#b8a6ff]",
+      },
+      {
+        name: "Vercel",
+        textIcon: "VC",
+        color: "text-white",
+      },
+      {
+        name: "Git",
+        icon: SiGit,
+        color: "text-[#f05032]",
+      },
+    ],
+
+    process: [
+      {
+        number: "01",
+        title: "Planning",
+        description:
+          "Defined the hotel booking flow, user booking journey, owner dashboard requirements, room data model, and full-stack project structure.",
+        period: "June 2025",
+      },
+      {
+        number: "02",
+        title: "Frontend Development",
+        description:
+          "Built the React and Tailwind CSS interface, including home page sections, room listings, room details, booking views, and responsive navigation.",
+        period: "June - July 2025",
+      },
+      {
+        number: "03",
+        title: "Backend Architecture",
+        description:
+          "Created the Express and MongoDB backend with routes, controllers, models, authentication middleware, and REST API endpoints.",
+        period: "July 2025",
+      },
+      {
+        number: "04",
+        title: "Service Integration",
+        description:
+          "Integrated Clerk for authentication, Cloudinary for image uploads, Stripe for test checkout, and Nodemailer for booking email flow.",
+        period: "July 2025",
+      },
+      {
+        number: "05",
+        title: "Deployment & Demo Setup",
+        description:
+          "Deployed the client and server with Vercel, configured environment variables, prepared demo data, and refined the project for portfolio presentation.",
+        period: "July 2025",
+      },
+    ],
+
+    results: [
+      {
+        value: "Full",
+        label: "Booking Flow",
+        icon: "📅",
+      },
+      {
+        value: "Owner",
+        label: "Dashboard",
+        icon: "📊",
+      },
+      {
+        value: "Stripe",
+        label: "Test Checkout",
+        icon: "💳",
+      },
+      {
+        value: "Live",
+        label: "Vercel Deploy",
+        icon: "🚀",
+      },
+    ],
+  },
+  {
     slug: "pennywise",
     title: "Pennywise",
     category: "frontend",
     isFeatured: false,
     filters: ["Front-End", "React", "TypeScript", "JavaScript"],
     summary:
-      "A front-end expense management web app built with React, TypeScript, Vite, Tailwind CSS, Redux Toolkit, React Query, Axios, and a json-server mock REST API.",
+      "A front-end expense management demo app built with React, TypeScript, Vite, Tailwind CSS, Redux Toolkit, React Query, Axios, and a GitHub-hosted mock REST API.",
     description:
-      "Pennywise is a front-end expense management web application that helps users log daily expenses, manage records, and visualize spending patterns. The project uses React, TypeScript, Vite, Tailwind CSS, Redux Toolkit, React Query, Axios, React Router, and json-server to simulate REST API data during development. It focuses on practical front-end architecture, state management, data fetching, CRUD workflows, and responsive dashboard UI.",
+      "Pennywise is a front-end expense management demo application that lets users explore expense tracking, record management, and spending visualization through a mock API. The project uses React, TypeScript, Vite, Tailwind CSS, Redux Toolkit, React Query, Axios, React Router, and a GitHub-hosted JSON Server mock API to simulate REST-style data flows. It focuses on practical front-end architecture, state management, data fetching, CRUD UI workflows, session persistence with localStorage, and responsive dashboard design.",
     role: "Front-End Developer / UI-UX Designer",
     year: "2025",
     type: "Front-End / Mock API",
@@ -304,10 +549,10 @@ export const projects: Project[] = [
         icon: BarChart3,
       },
       {
-        title: "Session Persistence",
+        title: "Demo API Integration",
         description:
-          "Uses localStorage to maintain demo login sessions during testing.",
-        icon: ShieldCheck,
+          "Connects the deployed app to a GitHub-hosted mock API for portfolio testing and sample data display.",
+        icon: Database,
       },
     ],
 
@@ -316,13 +561,13 @@ export const projects: Project[] = [
         number: "01",
         title: "Expense CRUD Operations",
         description:
-          "Users can create, read, update, and delete expense records through a responsive dashboard interface.",
+          "Users can explore create, read, update, and delete expense workflows through a responsive dashboard interface using mock API responses.",
       },
       {
         number: "02",
         title: "Mock REST API",
         description:
-          "Uses json-server and db.json to simulate REST API endpoints for development and testing.",
+          "Uses a db.json-based mock API for development and a GitHub-hosted My JSON Server endpoint for the deployed demo.",
       },
       {
         number: "03",

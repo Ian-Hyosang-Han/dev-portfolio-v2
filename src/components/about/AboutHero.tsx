@@ -17,10 +17,9 @@ export default function AboutHero() {
       {/* Floating keywords */}
 
       <div className="pointer-events-none absolute right-[25%] top-[18%] hidden w-[500px] animate-float-y-soft font-rajdhani uppercase tracking-[0.18em] text-white/70 min-[1301px]:block">
-
         {/* Focus */}
         <div className="absolute left-5 top-0">
-          <p className="text-sm font-semibold text-[#b8c77a]">// Focus</p>
+          <p className="text-sm font-semibold text-[#b8c77a]">{"// Focus"}</p>
           <div className="mt-4 space-y-1 text-sm">
             <p>Solve real problems</p>
             <p>Deliver impact</p>
@@ -29,7 +28,9 @@ export default function AboutHero() {
 
         {/* Approach */}
         <div className="absolute left-[130%] top-[10px]">
-          <p className="whitespace-nowrap text-sm font-semibold text-[#b8c77a]">// Approach</p>
+          <p className="whitespace-nowrap text-sm font-semibold text-[#b8c77a]">
+            {"// Approach"}
+          </p>
           <div className="mt-4 space-y-1 text-sm">
             <p>Plan</p>
             <p>Build</p>
@@ -38,10 +39,9 @@ export default function AboutHero() {
           </div>
         </div>
 
-
         {/* Mindset */}
         <div className="absolute right-0 top-[50px]">
-          <p className="text-sm font-semibold text-[#b8c77a]">// Mindset</p>
+          <p className="text-sm font-semibold text-[#b8c77a]">{"// Mindset"}</p>
           <div className="mt-4 space-y-2 text-sm">
             <p>Continuous learning</p>
             <p>Attention to detail</p>

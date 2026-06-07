@@ -19,7 +19,7 @@ export default function AboutPanel({
 
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <p className="font-rajdhani text-xs font-semibold uppercase tracking-[0.25em] text-[#b8c77a] md:text-sm">
-          // {title}
+          {`// ${title}`}
         </p>
 
         {headerAction}
