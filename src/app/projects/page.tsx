@@ -9,9 +9,7 @@ import type { ProjectListItem } from "@/types/project";
 export default function ProjectsPage() {
   const featuredProject = projects.find((project) => project.isFeatured);
 
-  const regularProjects: ProjectListItem[] = projects
-    .filter((project) => !project.isFeatured)
-    .map((project) => ({
+  const regularProjects: ProjectListItem[] = projects.map((project) => ({
       slug: project.slug,
       title: project.title,
       summary: project.summary,
