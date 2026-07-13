@@ -15,7 +15,7 @@ const statItems: StatItem[] = [
   },
   {
     label: "Experience",
-    value: "1+",
+    value: "2+",
     description: "Years coding",
   },
   {

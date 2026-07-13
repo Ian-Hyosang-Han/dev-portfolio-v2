@@ -20,6 +20,9 @@ import {
   Clapperboard,
   Heart,
   ShieldCheck,
+  Palette,
+  Blocks,
+  MonitorSmartphone,
 } from "lucide-react";
 
 export const projects: Project[] = [
@@ -1635,6 +1638,247 @@ export const projects: Project[] = [
       {
         value: "Live",
         label: "Vercel Deploy",
+        icon: "🚀",
+      },
+    ],
+  },
+  {
+    slug: "booking365-marketing-website",
+    title: "Booking365 Marketing Website",
+    category: "frontend",
+    isFeatured: false,
+    filters: ["Front-End", "WordPress", "JavaScript"],
+
+    summary:
+      "A custom WordPress marketing website created to promote the Booking365 indoor golf reservation platform, present its features and pricing, and support customer inquiries.",
+
+    description:
+      "Booking365 Marketing Website is a promotional website for an indoor golf reservation platform. The site was designed and developed as a fully custom WordPress theme using Gutenberg blocks, theme.json, reusable template parts, and responsive layouts. The project focused on presenting the Booking365 service clearly, supporting customer inquiries, improving search visibility, and delivering a consistent experience across desktop, tablet, and mobile devices.",
+
+    role: "WordPress Developer / UI-UX Designer",
+    year: "Sep 2025 - Nov 2025",
+    type: "WordPress Marketing Website",
+
+    heroImage: "/images/projects/wordpress/wordpress-hero.webp",
+    thumbnail: "/images/projects/wordpress/wordpress-thumbnail.webp",
+
+    liveUrl: "https://www.booking365.ca",
+
+    overviewItems: [
+      {
+        label: "Role",
+        value: "WordPress Developer / UI-UX Designer",
+      },
+      {
+        label: "Duration",
+        value: "Sep 2025 - Nov 2025",
+      },
+      {
+        label: "Platform",
+        value: "WordPress",
+      },
+      {
+        label: "Website Type",
+        value: "Marketing Website",
+      },
+      {
+        label: "Deployment",
+        value: "IONOS / Live Production",
+      },
+    ],
+
+    overviewHighlights: [
+      {
+        title: "Custom Theme",
+        description:
+          "Developed as a fully custom WordPress theme without relying on a prebuilt page-builder theme.",
+        icon: Palette,
+      },
+      {
+        title: "Gutenberg System",
+        description:
+          "Built reusable page sections with Gutenberg blocks, template parts, and theme.json.",
+        icon: Blocks,
+      },
+      {
+        title: "Responsive Experience",
+        description:
+          "Optimized layouts and interactions for desktop, tablet, and mobile devices.",
+        icon: MonitorSmartphone,
+      },
+    ],
+
+    features: [
+      {
+        number: "01",
+        title: "Custom WordPress Theme",
+        description:
+          "Designed and developed a fully custom theme tailored to the Booking365 brand and marketing requirements.",
+      },
+      {
+        number: "02",
+        title: "Gutenberg Block Development",
+        description:
+          "Created reusable Gutenberg-based content sections to support flexible page editing and consistent layouts.",
+      },
+      {
+        number: "03",
+        title: "Responsive Layout",
+        description:
+          "Built responsive page layouts that adapt across desktop, tablet, and mobile screen sizes.",
+      },
+      {
+        number: "04",
+        title: "Overlay Navigation",
+        description:
+          "Implemented a custom overlay navigation experience with branded styling and responsive behavior.",
+      },
+      {
+        number: "05",
+        title: "Contact Form",
+        description:
+          "Designed and integrated a customer inquiry form with a layout consistent with the overall site design.",
+      },
+      {
+        number: "06",
+        title: "Pricing Section",
+        description:
+          "Created a structured pricing section to communicate the Booking365 service offering clearly.",
+      },
+      {
+        number: "07",
+        title: "Template Parts",
+        description:
+          "Used reusable WordPress template parts for shared page elements such as navigation and footer content.",
+      },
+      {
+        number: "08",
+        title: "SEO & Performance",
+        description:
+          "Configured AIOSEO and optimized site structure, assets, and responsive behavior for search visibility and performance.",
+      },
+    ],
+
+    techStack: [
+      {
+        name: "WordPress",
+        textIcon: "WP",
+        color: "text-[#9fc3d9]",
+      },
+      {
+        name: "Gutenberg",
+        textIcon: "GB",
+        color: "text-[#d7e58d]",
+      },
+      {
+        name: "Custom Theme",
+        textIcon: "THEME",
+        color: "text-[#b8c77a]",
+      },
+      {
+        name: "Block Theme",
+        textIcon: "BLOCK",
+        color: "text-[#c7b7d8]",
+      },
+      {
+        name: "theme.json",
+        textIcon: "JSON",
+        color: "text-[#f0c98d]",
+      },
+      {
+        name: "HTML",
+        textIcon: "HTML",
+        color: "text-[#e89a78]",
+      },
+      {
+        name: "CSS",
+        textIcon: "CSS",
+        color: "text-[#8fb6d9]",
+      },
+      {
+        name: "JavaScript",
+        textIcon: "JS",
+        color: "text-[#f7df1e]",
+      },
+      {
+        name: "Figma",
+        textIcon: "FIG",
+        color: "text-[#d99fc3]",
+      },
+      {
+        name: "AIOSEO",
+        textIcon: "SEO",
+        color: "text-[#b8a6d9]",
+      },
+      {
+        name: "WP Migrate",
+        textIcon: "MIG",
+        color: "text-[#9fb6c3]",
+      },
+      {
+        name: "IONOS",
+        textIcon: "HOST",
+        color: "text-white",
+      },
+    ],
+
+    process: [
+      {
+        number: "01",
+        title: "Planning",
+        description:
+          "Defined the website goals, required content, target audience, page structure, and marketing priorities.",
+        period: "Sep 2025",
+      },
+      {
+        number: "02",
+        title: "Wireframing",
+        description:
+          "Created the page layouts and visual direction for the hero, features, pricing, contact, and navigation sections.",
+        period: "Sep 2025",
+      },
+      {
+        number: "03",
+        title: "Theme Development",
+        description:
+          "Built the custom WordPress theme, configured theme.json, and created the main template structure.",
+        period: "Sep - Oct 2025",
+      },
+      {
+        number: "04",
+        title: "Blocks & Components",
+        description:
+          "Developed Gutenberg-based sections, reusable template parts, overlay navigation, animations, and contact layouts.",
+        period: "Oct 2025",
+      },
+      {
+        number: "05",
+        title: "Optimization & Deployment",
+        description:
+          "Completed responsive testing, SEO configuration, performance improvements, site migration, and live deployment to IONOS.",
+        period: "Nov 2025",
+      },
+    ],
+
+    results: [
+      {
+        value: "Custom",
+        label: "WordPress Theme",
+        icon: "🎨",
+      },
+      {
+        value: "Responsive",
+        label: "Multi-Device Layout",
+        icon: "📱",
+      },
+      {
+        value: "SEO",
+        label: "AIOSEO Ready",
+        icon: "🔍",
+      },
+      {
+        value: "Live",
+        label: "IONOS Deployment",
         icon: "🚀",
       },
     ],
